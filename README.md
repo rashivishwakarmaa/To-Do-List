@@ -78,6 +78,6 @@ I have added a self screen-recorded video demonstrating the project workflow:
 
 ## 🚀 Live Demo
 
-View the deployed project here: [Live Project](https://rashivishwakarmaa.github.io/galaxy-portfolio/)
+View the deployed project here: [Live Project](https://rashivishwakarmaa.github.io/To-Do-List/)
 
 Made with ❤️ by Rashi Vishwakarma.

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Daily Tasks</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <div class="app-container" role="main" aria-label="To Do List Application">
+    <!-- Top Navigation -->
+    <nav class="navbar">
+      <h1 class="app-title">Your Daily Tasks</h1>
+      <button id="dark-mode-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode" type="button" class="icon-button">
+        <!-- Sun & Moon SVG icons toggle -->
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="none" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path></svg>
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="none" fill="currentColor" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+    </nav>
+
+    <!-- Motivational sticky note -->
+    <section class="sticky-note" id="sticky-note" aria-live="polite" tabindex="0">
+      Believe you can and you're halfway there.
+    </section>
+
+    <!-- Task Input Bar -->
+    <form id="task-form" class="task-input-form" aria-label="Add new task">
+      <input
+        id="new-task-input"
+        type="text"
+        placeholder="Add a new task..."
+        aria-required="true"
+        aria-label="Task description"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <select id="category-select" aria-label="Select task category">
+        <option value="personal" selected>Personal</option>
+        <option value="work">Work</option>
+        <option value="study">Study</option>
+      </select>
+      <button type="submit" aria-label="Add task" title="Add Task" class="icon-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="none" fill="currentColor" aria-hidden="true" width="24" height="24">
+          <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"/>
+        </svg>
+      </button>
+    </form>
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar" role="group" aria-label="Filter tasks">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true" type="button">All</button>
+      <button class="filter-btn" data-filter="pending" aria-pressed="false" type="button">Pending</button>
+      <button class="filter-btn" data-filter="completed" aria-pressed="false" type="button">Completed</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list" class="task-list" aria-live="polite" aria-label="List of tasks"></ul>
+
+    <!-- Footer with Leaf Icon & Clock -->
+    <footer class="footer">
+      <div class="leaf-icon" aria-hidden="true" title="Natural cozy accent">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#6F4E37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" focusable="false">
+          <path d="M20 4C13.67 4 8.13 5.61 4 8.41c-.87.47-1.63 1.2-2 2.21.71-.08 4.21-.31 8.11 3.48 2.91 2.68 4.26 6.29 4.42 8.33 1.28-4.81-1.61-10.14-3.35-12.12C11.45 8.27 14.18 5 20 4z"></path>
+        </svg>
+      </div>
+      <div id="desk-clock" class="desk-clock" aria-label="Current time" tabindex="0"></div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

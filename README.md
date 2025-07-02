@@ -69,3 +69,15 @@ Replace `<your-github-username>` and `<repository-name>` accordingly.
 ## License
 
 This project is open source and free to use.
+
+## 📹 Project Demo
+
+I have added a self screen-recorded video demonstrating the project workflow:
+
+[▶️ Watch Project Demo](YOUR_VIDEO_LINK_HERE)
+
+## 🚀 Live Demo
+
+View the deployed project here: [Live Project](https://rashivishwakarmaa.github.io/galaxy-portfolio/)
+
+Made with ❤️ by Rashi Vishwakarma.

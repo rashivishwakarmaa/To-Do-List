@@ -74,7 +74,7 @@ This project is open source and free to use.
 
 I have added a self screen-recorded video demonstrating the project workflow:
 
-[▶️ Watch Project Demo](YOUR_VIDEO_LINK_HERE)
+[▶️ Watch Project Demo](https://drive.google.com/file/d/1HAFjAxjfwsILsmGAwoqtD-GKmFPvSKTM/view?usp=sharing)
 
 ## 🚀 Live Demo
 
